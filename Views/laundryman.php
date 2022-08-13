@@ -2,9 +2,15 @@
 session_start();
 require_once('../Model/usersmodel.php');
 include('header.php');
+if (isset($_SESSION['flag'])) {
 
+    $conn = getConnection();
+    $email = $_SESSION['email'];
+    $sql = "select * from users where email='$email'";
+    $result = mysqli_query($conn, $sql);
+    $row = mysqli_fetch_assoc($result);
+    
 ?>
-
 
 
     <!DOCTYPE html>
@@ -14,7 +20,7 @@ include('header.php');
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="laundrymann.css">
+        <link rel="stylesheet" href="laundryman2.css">
 
         <title>UserProfile</title>
     </head>
@@ -25,14 +31,14 @@ include('header.php');
                 <div class="color">
                     <div class="profile-pic">
                         <div class="top-pic">
-                            <h2>20% sale </h2>
+                            <h2>Welcome</h2>
 
 
                         </div>
                         <div class="list">
-                            <li style="color: black;"> <a id="info">My Profile </a> </li>
+                            <li style="color: black;"> <a id="info" href="profile.php">My Profile </a> </li>
                             <li> <a id="infoPackege" href="package.php">Packege </a> </li>
-                            
+
                         </div>
                         <br>
                         <br>
@@ -67,7 +73,7 @@ include('header.php');
                         <div class="container">
                             <h1><b>Orders</b></h1>
                             <p></p>
-                            <a href="" class="viewButton">View</a>
+                            <a href="order.php" class="viewButton">View</a>
 
                         </div>
                     </div>
@@ -76,7 +82,7 @@ include('header.php');
                         <div class="container">
                             <h1><b>History</b></h1>
                             <p></p>
-                            <a href="" class="viewButton">View</a>
+                            <a href="history.php" class="viewButton">View</a>
 
                         </div>
                     </div>
@@ -92,10 +98,12 @@ include('header.php');
 
         </main>
 
-       
+
 
     </body>
 
     </html>
 
-
+<?php } else {
+    header('location: Login.php');
+} ?>

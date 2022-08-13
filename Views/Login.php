@@ -52,12 +52,14 @@
 
             <br><br>
             <input type="submit" id="log" name="login" value="Login">
+
             <br><br>
 
 
             <!-- <p class="sign-up-link">Don't Have an account..? <a href="Signup.php" class="Sign-Up">Sign Up</a> here</p> -->
 
         </form>
+   
     </div>
 </body>
 

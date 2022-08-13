@@ -33,9 +33,8 @@
             <ul class="nav-bar">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="package.php">Package</a></li>
-                <li><a href="events.php">Events</a></li>
             
-                <li><a href="">Contact Us</a></li>
+                <li><a href="contactus.php">Contact Us</a></li>
             </ul>
         </nav>
         <!-- <a class="btn" href="Login.html">Sign in</a> -->

@@ -1,15 +1,16 @@
 .styled-table tr th {
-    background-color: #009879;
+    background-color: #2274d8;
     color: #ffffff;
     text-align: center;
-    border: none;
-   
+    border: 2px solid black;
+   padding: 5px;
     
 
 }
 .styled-table{
     margin-top: 100px;
     width: 100%;
+    border: 2px solid black;
 }
 
 a{
@@ -24,17 +25,22 @@ border: none;
 }
 
 td{
-    background-color: rgb(202, 192, 192);
+    background-color: rgb(203, 209, 245);
+    border: 2px solid black;
+    padding: 7px;
+}
+td:hover{
+    background-color: rgb(231, 236, 238);
 }
 
 body{
-    background-color: rgb(167, 202, 231);
+    background-color: rgb(140, 198, 245);
 }
 
 button{
-    background-color:#cbd7ef;
+    background-color:#d1daed;
 	border-radius:9px;
-	border:1px solid #c7c7c7;
+	border:1px solid #7c7cf5;
 	display:inline-flex;
 	cursor:pointer;
 	color:#0066ff;
@@ -42,6 +48,6 @@ button{
 	font-size:20px;
     margin-top: 20px;
 	text-decoration:none;
-	text-shadow:0px 0px 0px #70756f;
+	text-shadow:0px 0px 0px #95c6f3;
     text-align: center;
 }

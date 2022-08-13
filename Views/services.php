@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="service2.css">
+    <link rel="stylesheet" href="service3.css">
     <title>Document</title>
 </head>
 
@@ -29,7 +29,7 @@
     } else {
         $q = "SELECT * from services";
         $result = $conn->query($q);
-        $output = '<table class="styled-table"  border="1" ><tr><th >ID</th><th>Name</th> <th>Description</th> <th>Price</th> <th>Action</th> </</tr>';
+        $output = '<table class="styled-table"><tr><th >ID</th><th>Name</th> <th>Description</th> <th>Price</th> <th>Action</th> </</tr>';
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
 
@@ -52,7 +52,7 @@
     echo $output;
     ?>
 
-    <br><br><br>
+    <br><br><br> 
     <center>
         <button> <a href="laundryman.php">Return</a>
         </button>

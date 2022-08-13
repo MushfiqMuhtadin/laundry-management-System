@@ -1,0 +1,105 @@
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #0878c2;
+    color: white;
+}
+
+body {
+    background-color: #b2c1f1;
+}
+
+.myButton {
+    box-shadow: inset 0px -3px 7px 0px #29bbff;
+    background: linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+    background-color: #004169;
+    border-radius: 3px;
+    border: 1px solid #c6c5ff;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    padding: 9px 23px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #263666;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.myButton:hover {
+    background: linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+    background-color: #0688fa;
+}
+
+
+
+.myButton2 {
+    box-shadow: inset 0px -3px 7px 0px #f65904;
+    background: linear-gradient(to bottom, #ef6109 5%, #fa3306 100%);
+    background-color: #d6260b;
+    border-radius: 3px;
+    border: 1px solid #f47906;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    padding: 9px 23px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #9b071d;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.myButton2:hover {
+    background: linear-gradient(to bottom, #d70909 5%, #d71744 100%);
+    background-color: #a13b19;
+}
+
+.thanks {
+
+    background-color: #ef1120;
+    width: 20%;
+    padding: auto;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.confirmed {
+
+    background-color: #08e77f;
+    width: 20%;
+    padding: auto;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
