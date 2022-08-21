@@ -9,6 +9,7 @@ function form() {
 
     var username = document.signupform.username.value;
     var email = document.signupform.email.value;
+    var address = document.signupform.address.value;
     var userpassword = document.signupform.userpassword.value;
     var confirmpassword = document.signupform.confirmpassword.value;
 
@@ -23,6 +24,20 @@ function form() {
         usernameerror = false;
     }
 
+    // Validate email
+    if (email == "") {
+        printError("emailerror", "Enter your Email");
+    } else {
+        printError("emailerror", "");
+        emailerror = false;
+    }
+    // Validate address
+    if (email == "") {
+        printError("addresserror", "Enter your address");
+    } else {
+        printError("addresserror", "");
+        addresserror = false;
+    }
     // Validate email
     if (email == "") {
         printError("emailerror", "Enter your Email");
@@ -51,6 +66,7 @@ function form() {
     if (
         (usernameerror ||
             emailerror ||
+            addresserror ||
             userpassworderror ||
             confirmpassworderror) == true
     ) {

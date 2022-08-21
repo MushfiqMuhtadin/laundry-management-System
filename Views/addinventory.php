@@ -13,6 +13,7 @@
     <center>
         <h2>please add your service</h2>
     </center> <br><br><br>
+    <p></p>
 
     <div>
         <form action="../Controllers/addinventorydb.php" method="POST">
@@ -32,6 +33,8 @@
     </div>
     <button> <a href="laundryman.php">Return</a>
     </button>
+    <br>
+
 </body>
 
 </html>

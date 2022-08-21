@@ -49,6 +49,11 @@ if (isset($_SESSION['flag'])) {
                     </h2>
                 </tr>
                 <tr>
+                    <h2>
+                        <td> Address : <?= $row['address'] ?> </td>
+                    </h2>
+                </tr>
+                <tr>
                     <td> Usertype: <?= $row['usertype'] ?></td>
                 </tr>
 

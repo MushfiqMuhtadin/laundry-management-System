@@ -31,14 +31,19 @@ if (isset($_GET['editid'])) {
                 <label for="id">Id</label>
                 <input type="text" name="id" placeholder="edit your id" value="<?= $row['id'] ?>">
                 <label for="name">Name</label>
-                <input type="text" name="name" placeholder="edit your service name" value="<?= $row['name'] ?>">
+
+                <input type="text" name="username" placeholder="edit your service name" value="<?= $row['username'] ?>">
+
+                <input type="text" name="list" placeholder="edit your list" value="<?= $row['list'] ?>">
+
+                <input type="text" name="title" placeholder="edit your title" value="<?= $row['I_title'] ?>">
 
                 <label for="description">Description</label>
-                <input type="text" name="description" placeholder="enter your description" value="<?= $row['description'] ?>">
+                <input type="text" name="description" placeholder="edit your description" value="<?= $row['I_description'] ?>">
 
-                <label for="price">price</label>
-                <input type="text" name="price" placeholder="enter the price"
-                 value="<?= $row['price'] ?>">
+                <label for="image"></label>
+                <input type="text" name="image" placeholder="edit image"
+                 value="<?= $row['I_image'] ?>">
 
                 <input type="submit" name="submit" value="Update">
 

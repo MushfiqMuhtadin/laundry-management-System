@@ -17,14 +17,20 @@
     <div>
         <form action="../Controllers/addservicedb.php" method="POST">
 
-            <label for="name">Name</label>
-            <input type="text" name="name" placeholder="enter your service name">
+            <label for="username">Userame</label>
+            <input type="text" name="username" placeholder="enter your user name">
+
+            <label for="list">List</label>
+            <input type="text" name="list" placeholder="enter your list">
+
+            <label for="title">title</label>
+            <input type="text" name="title" placeholder="enter the title">
 
             <label for="description">Description</label>
-            <input type="text" name="description" placeholder="enter your description">
+            <input type="text" name="description" placeholder="enter your descriprion">
 
-            <label for="price">price</label>
-            <input type="text" name="price" placeholder="enter the price">
+            <label for="image">Image</label>
+            <input type="text" name="image" placeholder="enter image">
 
             <input type="submit" name="submit" value="submit">
 

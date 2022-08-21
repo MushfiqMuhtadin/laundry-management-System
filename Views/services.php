@@ -29,15 +29,18 @@
     } else {
         $q = "SELECT * from services";
         $result = $conn->query($q);
-        $output = '<table class="styled-table"><tr><th >ID</th><th>Name</th> <th>Description</th> <th>Price</th> <th>Action</th> </</tr>';
+        $output = '<table class="styled-table"><tr> <th >ID</th> <th>userame</th>
+        <th>list</th> <th>title</th> <th>Description</th> <th>image</th> <th>Action</th> </</tr>';
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
 
 
                 $output .= "<tr><td>{$row["id"]}</td>
-			        <td>{$row["name"]}</td>
-			        <td>{$row["description"]}</td>
-			        <td>{$row["price"]}</td>
+			        <td>{$row["username"]}</td>
+			        <td>{$row["list"]}</td>
+			        <td>{$row["I_title"]}</td>
+			        <td>{$row["I_description"]}</td>
+			        <td>{$row["I_image"]}</td>
 			        
 			        <td><button><a href='deleteservice.php?deleteid={$row["id"]}'>Delete</a></button>
 			        <button ><a href='editservice.php?editid={$row["id"]}'>Edit</a></button></td>

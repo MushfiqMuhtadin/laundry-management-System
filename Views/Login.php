@@ -52,6 +52,7 @@
 
             <br><br>
             <input type="submit" id="log" name="login" value="Login">
+            <a href="Signup.php">Signup</a>
 
             <br><br>
 

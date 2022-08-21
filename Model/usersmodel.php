@@ -3,7 +3,7 @@ require_once('db.php');
 
 function insertUser($userinfo){
     $conn = getConnection();
-    $sql = "insert into users values('','{$userinfo['username']}','{$userinfo['email']}','{$userinfo['userpassword']}','{$userinfo['confirmpassword']}','{$userinfo['usertypes']}')";
+    $sql = "insert into users values('','{$userinfo['username']}','{$userinfo['email']}','{$userinfo['address']}','{$userinfo['userpassword']}','{$userinfo['confirmpassword']}','{$userinfo['usertypes']}')";
     $row = mysqli_query($conn,$sql);
     if($row){
         return true;

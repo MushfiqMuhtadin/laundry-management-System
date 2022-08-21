@@ -2,17 +2,20 @@
 
 require_once('../Model/usersmodel.php');
 if (isset($_POST['submit'])) {
-    $id = $_POST['id'];
-    $name = $_POST['name'];
+    
+    $id= $_POST['id'];
+    $username = $_POST['username'];
+    $list = $_POST['list'];
+    $title = $_POST['title'];
     $description = $_POST['description'];
-    $price = $_POST['price'];
+    $image = $_POST['image'];
   
 
 
 
     $conn = getConnection();
 
-    $sql = "update services set id='$id',name='$name',description='$description',price='$price' WHERE id='$id'";
+    $sql = "update services set id='$id',username='$username',list='$list',I_title='$title',I_description='$description',I_image='$image' WHERE id='$id'";
     $result = mysqli_query($conn, $sql);
 
     if ($result) {

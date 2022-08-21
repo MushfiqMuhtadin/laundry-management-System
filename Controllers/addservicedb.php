@@ -7,13 +7,16 @@ $dbname = "laundry";
 $conn = mysqli_connect($server, $username, $password, $dbname);
 
 if (isset($_POST['submit'])) {
-    if (!empty($_POST['name']) && !empty($_POST['description']) && !empty($_POST['price'])) {
+    if (!empty($_POST['username']) &&!empty($_POST['list']) && !empty($_POST['title']) &&
+     !empty($_POST['description']) && !empty($_POST['image'])) {
 
-        $name = $_POST['name'];
+        $username = $_POST['username'];
+        $list = $_POST['list'];
+        $title = $_POST['title'];
         $description = $_POST['description'];
-        $price = $_POST['price'];
+        $image = $_POST['image'];
 
-        $query = "insert into services(name,description,price)values('$name','$description','$price')";
+        $query = "insert into services(username,list,I_title,I_description,I_image)values('$username','$list','$title','$description','$image')";
 
         $run = mysqli_query($conn, $query);
 

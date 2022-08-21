@@ -36,6 +36,10 @@
       <input type="email" name="email" id="email" placeholder="Email" />
      <center> <small class="validate" id="emailerror"></small></center> 
 
+      <label for="address"></label> 
+      <input type="address" name="address" id="address" placeholder="address" />
+     <center> <small class="validate" id="addresserror"></small></center> 
+
 
       <label for="userpassword"></label> 
       <input type="password" name="userpassword" id="userpassword" placeholder="Password" />
